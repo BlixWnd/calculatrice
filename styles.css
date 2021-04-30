@@ -1,0 +1,29 @@
+.orange {
+  background-color: rgb(255, 166, 0);
+  border-radius: 10px;
+  border: none;
+  border-top: 10px;
+}
+.orange:hover {
+  background-color: rgb(255, 195, 82);
+}
+.gris {
+  background-color: gray;
+  border-radius: 10px;
+  border: none;
+}
+.gris:hover{
+  background-color: rgb(146, 146, 146);
+}
+.bord {
+  border-radius: 10px;
+  background-color: rgb(77, 77, 77);
+  border: none;
+}
+.bord:hover {
+  background-color: rgb(97, 97, 97);
+}
+.bordecran {
+  border-radius: 10px;
+  background-color: rgb(221, 221, 221);
+}
