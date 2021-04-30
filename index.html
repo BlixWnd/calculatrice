@@ -1,0 +1,199 @@
+<link rel="stylesheet" href="./styles.css">
+<style>
+    table{
+        padding: 10px;border-width:1px; border-style:solid;border-color:black;margin: auto; background-color: rgb(48, 44, 44);
+    }
+    td{
+        border-width:1px; border-style:solid;border-color:black;padding: 10px;cursor: pointer;
+    }
+</style>
+    <table>
+        <tr>
+            <td class="bordecran" colspan="5" style="height: 50px;" id="zoneText"></td>
+        </tr>
+        <tr>
+            <td class="bord" onclick="racinecarre()">&radic;</td>
+            <td class="gris" onclick="typeC(7)">7</td>
+            <td class="gris" onclick="typeC(8)">8</td>
+            <td class="gris" onclick="typeC(9)">9</td>
+            <td class="orange" onclick="typeC('+')">+</td>
+        </tr>
+        <tr>
+            <td class="bord" onclick="sin()">sin</td>
+            <td class="gris" onclick="typeC(4)">4</td>
+            <td class="gris" onclick="typeC(5)">5</td>
+            <td class="gris" onclick="typeC(6)">6</td>
+            <td class="orange" onclick="typeC('-')">-</td>
+        </tr>
+        <tr>
+            <td class="bord" onclick="cos()">cos</td>
+            <td class="gris" onclick="typeC(1)">1</td>
+            <td class="gris" onclick="typeC(2)">2</td>
+            <td class="gris" onclick="typeC(3)">3</td>
+            <td class="orange" onclick="typeC('x')">x</td>    
+        </tr>
+        <tr>
+            <td class="bord" onclick="tan()">tan</td>
+            <td class="bord"onclick="clean()">C</td>
+            <td class="gris" onclick="typeC(0)">0</td>
+            <td class="orange" onclick="calc()">=</td>
+            <td class="orange" onclick="typeC('/')">/</td>
+        </tr>
+    </table>
+
+<script>
+    const typeC = ( touche ) => {
+        document.getElementById('zoneText').innerHTML = document.getElementById('zoneText').innerHTML + touche
+    }
+    const clean = () => {
+        document.getElementById('zoneText').innerHTML = "";
+    }
+    const calc = () => {
+        document.getElementById('zoneText').innerHTML = eval(document.getElementById('zoneText').innerHTML.replace( /x/g , '*' ) );
+    }
+    const racinecarre = () =>{
+        calc();
+        document.getElementById('zoneText').innerHTML = Math.sqrt(document.getElementById('zoneText').innerHTML);
+    }
+    const tan = () => {
+        calc();
+        document.getElementById('zoneText').innerHTML = Math.tan(document.getElementById('zoneText').innerHTML);
+    }
+    const cos = () => {
+        calc();
+        document.getElementById('zoneText').innerHTML = Math.cos(document.getElementById('zoneText').innerHTML);
+    }
+    const sin = () => {
+        calc();
+        document.getElementById('zoneText').innerHTML = Math.sin(document.getElementById('zoneText').innerHTML);
+    }
+
+</script>
+<div class="orange"></div>
+<div class="gris"></div>
+<div class="bord"></div>
+<div class="bordecran"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
